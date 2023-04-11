@@ -1,0 +1,44 @@
+﻿<Window x:Class="Random_C.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Random_C"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="MainWindow" Height="450" Width="800">
+    <Canvas>
+        <Button Width="200"
+                Height="50"
+                x:Name="Getcitat"
+                GotMouseCapture="Button_GotMouseCapture" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="465" Canvas.Top="105"
+                Content="Get citation">
+
+        </Button>
+        <Button Width="200"
+                x:Name="Disconnect"
+                Height="50"
+                Content="Disconnect"
+                GotMouseCapture="Button_GotMouseCapture_1" HorizontalAlignment="Left" Canvas.Left="465" VerticalAlignment="Top" Canvas.Top="170">
+
+        </Button>
+
+        <Button Width="200"
+                x:Name="Connect"
+                Height="50"
+                Content="Connect"
+                GotMouseCapture="Connect_GotMouseCapture" HorizontalAlignment="Left" Canvas.Left="465" VerticalAlignment="Top" Canvas.Top="241">
+
+        </Button>
+
+        <TextBox Width="400"
+                     VerticalScrollBarVisibility="Auto"
+                 Height="400" Canvas.Left="33" Canvas.Top="10"
+                 IsReadOnly="True"
+                 x:Name="TXT"
+                 TextWrapping="Wrap">
+        </TextBox>
+
+
+    </Canvas>
+</Window>
